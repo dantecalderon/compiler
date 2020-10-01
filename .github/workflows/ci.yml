@@ -2,10 +2,6 @@ name: Rust CI
 
 on:
   pull_request:
-    paths:
-      - '**.rs'
-      - '**.toml'
-      - '.github/workflows/ci.yml'
   push:
     branches:
       - main

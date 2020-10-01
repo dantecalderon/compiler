@@ -11,7 +11,7 @@ pub fn get_sflyn_path() -> String {
 /// 
 /// ## Example
 /// ```
-/// use sflyn::utils::repeat_character;
+/// use sflynlang::utils::repeat_character;
 /// 
 /// let message = repeat_character(4, "-");
 /// // Returns: "----"
