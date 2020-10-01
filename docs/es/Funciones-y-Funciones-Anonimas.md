@@ -1,9 +1,11 @@
 # Funciones y Funciones Anónimas
+
 ## Tabla de contenidos
 * Introducción
 * Funciones Anonimas
 * Valores por defecto en los argumentos
 * Escribiendo funciones
+
 ## Introduccion
 Las funciones se utilizan para ejecutar acciones cuando se invocan, para declararlas utilizamos
 la palabra clave `func` seguida del nombre, los argumentos y el bloque a ejecutar.
@@ -23,6 +25,7 @@ func getName(): string {
 print(getName());
 // Output: Sflynlang
 ```
+
 ## Funciones anonimas
 Una función anonima es similar a una función normal pero es declarada en una variable.
 ```
@@ -51,6 +54,7 @@ getName((name: string): void => {
   // Output: Sflynlang
 });
 ```
+
 ## Valor por defecto en los Argumentos
 Los argumentos de una función pueden tener valores por defecto. Si fijas un valor a uno,
 los siguientes argumentos deben tener un valor por defecto también.
@@ -65,11 +69,10 @@ print(concat("Sflyn"));
 print(concat("Sflyn", "-lang"));
 // Output: Sflyn-lang
 ```
+
 ## Escribiendo funciones
 ```
 const addTwo: (n: number) => number = func (n: number): number {
   return num + 2;
 }
 ```
-
-

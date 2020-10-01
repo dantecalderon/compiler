@@ -81,5 +81,3 @@ Puedes ver una lista de [contribuidores](https://github.com/sflynlang/compiler/g
 
 ## Licencia
 Este proyecto es desarrollado bajo licencia MIT. Lee [LICENSE](https://github.com/sflynlang/compiler/blob/main/LICENSE) para más información.
-
-  
