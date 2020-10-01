@@ -36,23 +36,23 @@ jobs:
         if: startsWith(matrix.os, 'ubuntu')
         run: |
           mkdir -p target/release
-          zip -r target/release/sflyn-src.zip std/* CHANGELOG.md LICENSE README.md
+          zip -r target/release/sflynlang-src.zip docs/* std/* CHANGELOG.md LICENSE README.md
 
       - name: Pre-release (Linux)
         if: startsWith(matrix.os, 'ubuntu')
         run: |
           cd target/release
-          zip -r sflyn-x86_64-unknown-linux-gnu.zip sflyn
+          zip -r sflynlang-x86_64-unknown-linux-gnu.zip sflynlang
 
       - name: Pre-release (Windows)
         if: startsWith(matrix.os, 'windows')
-        run: Compress-Archive -CompressionLevel Optimal -Force -Path target/release/sflyn.exe -DestinationPath target/release/sflyn-x86_64-pc-windows-msvc.zip
+        run: Compress-Archive -CompressionLevel Optimal -Force -Path target/release/sflynlang.exe -DestinationPath target/release/sflynlang-x86_64-pc-windows-msvc.zip
 
       - name: Pre-release (MacOS)
         if: startsWith(matrix.os, 'macOS')
         run: |
           cd target/release
-          zip -r sflyn-x86_64-apple-darwin.zip sflyn
+          zip -r sflynlang-x86_64-apple-darwin.zip sflynlang
 
       - name: Create the release draft
         uses: softprops/action-gh-release@v1
@@ -60,10 +60,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           files: |
-            target/release/sflyn-src.zip
-            target/release/sflyn-x86_64-unknown-linux-gnu.zip
-            target/release/sflyn-x86_64-pc-windows-msvc.zip
-            target/release/sflyn-x86_64-apple-darwin.zip
+            target/release/sflynlang-src.zip
+            target/release/sflynlang-x86_64-unknown-linux-gnu.zip
+            target/release/sflynlang-x86_64-pc-windows-msvc.zip
+            target/release/sflynlang-x86_64-apple-darwin.zip
           draft: true
 
       - name: Publish to crates.io
