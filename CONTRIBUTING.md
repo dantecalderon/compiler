@@ -28,8 +28,6 @@ More help can be found by joining our [Official Discord Server](https://discord.
 ### 1. Fork the repository
 Fork this repository ([sflynlang/compiler](https://github.com/sflynlang/conpiler)) to your GitHub account. You can do this by clicking on the Fork button provided in the top right corner of the repository page.
 
-![Fork Image](./assets/readme/fork_image.png)
-
 > NOTE: If you are using GitHub CLI can run `gh repo fork sflynlang/compiler` to fork it. ([See more](https://cli.github.com/manual/gh_repo_fork))
 
 Please also, star and watch this repository to receive all the updates directly to your e-mail.

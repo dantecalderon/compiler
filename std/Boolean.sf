@@ -1,6 +1,0 @@
-
-const Boolean = {
-  toString: (): string => {
-    return 'false';
-  },
-};

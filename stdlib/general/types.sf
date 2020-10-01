@@ -1,0 +1,44 @@
+
+internal class String {
+  internal length: number;
+
+  internal split(character: string): string[];
+
+  internal slice(startIndex: number, endIndex: number): string;
+}
+
+internal class Number {
+  internal toString(): string;
+}
+
+internal class Boolean {
+  internal toString(): string;
+}
+
+internal class Null {
+  internal toString(): string;
+}
+
+internal class Array<T> {
+  internal length: number;
+
+  internal find(fn: (element: T) => boolean): Option<T>;
+
+  internal findIndex(fn: (element: T) => boolean): number;
+
+  internal includes(element: T): boolean;
+
+  internal push(element: T): number;
+
+  internal splice(index: number, count: number): Option<T>;
+
+  internal slice(startIndex: number, endIndex: number): T[];
+}
+
+internal class HashMap<K, V> {
+  internal toString(): string;
+
+  internal keys(): K[];
+
+  internal values(): V[];
+}

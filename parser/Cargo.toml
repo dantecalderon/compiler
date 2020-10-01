@@ -1,12 +1,8 @@
 [package]
-name = "sflyn_parser"
-version = "1.0.0"
-license = "MIT"
+name = "sflynlang-parser"
+version = "0.1.0"
 authors = ["Sflynlang"]
-homepage = "https://github.com/sflynlang/compiler/README.md"
-repository = "https://github.com/sflynlang/compiler"
 edition = "2018"
 
-[lib]
-name = "sflyn_parser"
-path = "lib.rs"
+[dependencies]
+codespan = "0.9.5"
