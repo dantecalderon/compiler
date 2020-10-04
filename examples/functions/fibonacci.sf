@@ -1,0 +1,12 @@
+// Returns the fibonacci of a number
+func fibonacci (n: number): string {
+  if (n <= 1) {
+    return n;
+  }
+  return fibonacci(n) + fibonacci(n - 1);
+}
+
+print("fibonacci(1): " + fibonacci(1)->toString());
+print("fibonacci(2): " + fibonacci(2)->toString());
+print("fibonacci(5): " + fibonacci(5)->toString());
+print("fibonacci(9): " + fibonacci(9)->toString());

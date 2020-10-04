@@ -6,9 +6,9 @@ on:
     branches:
       - main
     paths:
-      - '**.rs'
-      - '**.toml'
-      - '.github/workflows/ci.yml'
+      - "**.rs"
+      - "**.toml"
+      - ".github/workflows/ci.yml"
 
 jobs:
   build:
@@ -50,6 +50,7 @@ jobs:
           cargo run ./examples/functions/double.sf
           cargo run ./examples/functions/less_or_greater.sf
           cargo run ./examples/functions/say_hi.sf
+          cargo run ./examples/functions/pow_default_value.sf
           echo "Interfaces examples"
           cargo run ./examples/interfaces/label.sf
           echo "Modules examples"

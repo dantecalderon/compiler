@@ -1,0 +1,9 @@
+// Returns the base to the exponent power, exponent is 2 by default if it is not given
+func pow (base: number, exponent: number = 2): number {
+  return base ^ exponent;
+}
+
+print("pow(2): " + pow(2)->toString());
+print("pow(2, 2): " + pow(2, 2)->toString());
+print("pow(2, 3): " + pow(2, 3)->toString());
+print("pow(3, 4): " + pow(3, 4)->toString());
